@@ -33,4 +33,5 @@ export interface IMultiselectProps {
   selectedValueDecorator?: (v: string, option: any) => React.ReactNode | string;
   optionValueDecorator?: (v: string, option: any) => React.ReactNode | string;
   hideSelectedList?: boolean;
+  groupSelectAll?: boolean;
 }

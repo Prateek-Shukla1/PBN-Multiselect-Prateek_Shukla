@@ -438,6 +438,7 @@ export class Multiselect extends React.Component<IMultiselectProps, any> {
       style,
       singleSelect,
       groupBy,
+      groupSelectAll,
     } = this.props;
     const { groupedObject, selectedValues } = this.state;
 
@@ -454,7 +455,7 @@ export class Multiselect extends React.Component<IMultiselectProps, any> {
             }}
             // Add a click listener to the group title
             onClick={() => {
-              if (groupBy) {
+              if (groupBy && groupSelectAll) {
                 this.groupSelectAll(groupedObject[obj]);
               }
             }}
