@@ -82,6 +82,5 @@
     "normalize-url": "4.5.1",
     "css-what": "5.0.1",
     "glob-parent": "5.1.2"
-  },
-  "dependencies": {}
+  }
 }
